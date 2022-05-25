@@ -1,0 +1,5 @@
+#Create ec2 instance
+aws ec2 run-instances --image-id ami-**** --count 1 --instance-type t2.micro --key-name **** --security-group-ids sg-*****
+
+#Create AMI
+aws ec2 create-image --instance-id ***** --name "My Cli Image" --description "An AMI"
